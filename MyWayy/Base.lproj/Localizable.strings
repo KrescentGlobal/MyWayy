@@ -1,0 +1,68 @@
+/*
+  Localizable.strings
+  MyWayy
+
+  Created by SpinDance on 9/13/17.
+  Copyright © 2017 SpinDance. All rights reserved.
+*/
+
+// view controller
+loginViewController.label.signIn = "Sign in";
+loginViewController.button.forgetPassword = "Forget?";
+loginViewController.button.logIn = "Log in";
+loginViewController.button.logInWithFB = "Log in with Facebook";
+loginViewController.button.register = "Don't have an account? Sign Up";
+forgetPasswordViewController.label.resetPasswordHeader = "Reset password";
+forgetPasswordViewController.button.resetPassword = "Reset Password";
+forgetPasswordViewController.button.back = "BACK";
+signUpViewController.label.accountInfo = "Nice to meet you.";
+signUpViewController.label.contactInfo = "Contact Info";
+signUpViewController.label.username = "USERNAME";
+signUpViewController.label.password = "PASSWORD";
+signUpViewController.label.passwordConfirm = "CONFIRM PASSWORD";
+signUpViewController.button.next = "Next";
+signUpViewController.button.alreadyHaveAccount = "Already have an account? Log in";
+codeConfirmViewController.label.promptTitle = "Your account has been created!";
+codeConfirmViewController.label.promptBody = "Please enter the verification code sent to your:";
+codeConfirmViewController.label.verificationCode = "VERIFICATION CODE";
+codeConfirmViewController.button.verify = "VERIFY";
+codeConfirmViewController.button.resend = "RESEND VERIFICATION CODE";
+createUserViewController.label.register = "REGISTER";
+createUserViewController.button.uploadPhoto = "UPLOAD PROFILE PICTURE";
+createUserViewController.label.phoneNumber = "PHONE NUMBER";
+createUserViewController.label.email = "EMAIL ADDRESS";
+createUserViewController.error.usernameBlank = "Username cannot be blank";
+createUserViewController.error.passwordBlank = "Password cannot be blank";
+createUserViewController.error.usernameAlreadyExisits = "Username already exists";
+createUserViewController.error.passwordComplexity = "Insufficient password complexity";
+createUserViewController.error.passwordTooShort = "Password must contain at least 6 characters";
+createUserViewController.error.phoneNumberEmailRequired = "Phone Number or Email required.";
+createUserViewController.error.invalidEmail = "Email entered is not a valid email.";
+createUserViewController.error.invalidPhoneNumber = "Phone number entered is not a valid phone number.";
+createUserViewController.button.createUser = "CREATE ACCOUNT";
+createUserViewController.label.agreeTotTermsAndConditions = "By clicking Create Account, you agree to our Terms and Conditions. You may receive notifications from MyWayy and can opt out at any time.";
+profileViewController.myProfileLabel.text = "MY PROFILE";
+profileViewController.editProfileButton.title = "EDIT PROFILE";
+profileViewController.actionSelector.wayys = "Wayys";
+profileViewController.actionSelector.activities = "My Activities";
+routineTableViewCell.label.hours = "Hours";
+routineTableViewCell.label.endTime = "End Time";
+createRoutineViewController.label.nameWayy = "NAME WAYY";
+createRoutineViewController.label.endTIme = "END TIME";
+createRoutineViewController.label.startTime = "Start time will be calculated";
+createRoutineViewController.label.repeat = "REPEAT";
+createRoutineViewController.label.alertStyle = "ALERT STYLE";
+createRoutineViewController.label.countdownReminders = "COUNTDOWN REMINDERS";
+createRoutineViewController.label.notifyOfNextActivity = "Notify of next activity";
+createRoutineViewController.label.visibility = "VISIBILITY";
+createRoutineViewController.label.description = "DESCRIPTION (OPTIONAL)";
+createRoutineViewController.label.descriptionNotes = "\"I use this Wayy to...\"";
+createRoutineViewController.label.coverPhoto = "COVER PHOTO";
+createRoutineViewController.button.next = "Next";
+nextTableFooter.nextButton.title = "Next";
+profileViewController.shareSms.text="Help make progress with your goals by using MyWayy.  Get it at the Apple App Store: https://www.apple.com/ios/app-store/";
+searchViewController.searchTargetControl.routines = "Wayys";
+searchViewController.searchTargetControl.profiles = "Users";
+searchRoutineCollectionViewCell.hourUnits = " hrs";
+searchNextTableViewCell.nextButton.title = "view more results";
+searchNextCollectionViewCell.nextButton.title = "view more results";

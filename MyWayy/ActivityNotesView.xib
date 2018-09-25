@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qN6-1M-CeJ" customClass="ActivityNotesView" customModule="MyWayy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="285"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66B-He-hXi">
+                    <rect key="frame" x="20" y="20" width="360" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eR-MJ-SdI">
+                    <rect key="frame" x="20" y="56.5" width="360" height="3"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="hEL-0q-va0"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Notes go here." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwB-gv-qve">
+                    <rect key="frame" x="20" y="76" width="360" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpn-8s-QVF">
+                    <rect key="frame" x="134" y="243" width="133" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="LDn-vV-05R"/>
+                    </constraints>
+                    <state key="normal" title="BACK TO ACTIVITY"/>
+                    <connections>
+                        <action selector="backToActivityTapped:" destination="qN6-1M-CeJ" eventType="touchUpInside" id="nb0-1E-d0q"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Z8p-0D-oiL" firstAttribute="trailing" secondItem="66B-He-hXi" secondAttribute="trailing" constant="20" id="8Rz-z2-OdR"/>
+                <constraint firstItem="66B-He-hXi" firstAttribute="leading" secondItem="Z8p-0D-oiL" secondAttribute="leading" constant="20" id="BkV-fe-iHT"/>
+                <constraint firstItem="Mpn-8s-QVF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="kwB-gv-qve" secondAttribute="bottom" priority="750" constant="8" id="Gwq-nz-L2P"/>
+                <constraint firstItem="Z8p-0D-oiL" firstAttribute="bottom" secondItem="Mpn-8s-QVF" secondAttribute="bottom" constant="8" id="UI3-gF-D5B"/>
+                <constraint firstItem="kwB-gv-qve" firstAttribute="leading" secondItem="66B-He-hXi" secondAttribute="leading" id="V4S-MY-ZVM"/>
+                <constraint firstItem="Mpn-8s-QVF" firstAttribute="centerX" secondItem="Z8p-0D-oiL" secondAttribute="centerX" id="Whq-aH-8Q7"/>
+                <constraint firstItem="1eR-MJ-SdI" firstAttribute="top" secondItem="66B-He-hXi" secondAttribute="bottom" constant="16" id="ZsF-Lt-JCj"/>
+                <constraint firstItem="1eR-MJ-SdI" firstAttribute="leading" secondItem="66B-He-hXi" secondAttribute="leading" id="bRz-sZ-7dt"/>
+                <constraint firstItem="kwB-gv-qve" firstAttribute="top" secondItem="1eR-MJ-SdI" secondAttribute="bottom" constant="16" id="fqM-sT-Ak5"/>
+                <constraint firstItem="1eR-MJ-SdI" firstAttribute="trailing" secondItem="66B-He-hXi" secondAttribute="trailing" id="k3c-ya-yw3"/>
+                <constraint firstItem="kwB-gv-qve" firstAttribute="trailing" secondItem="66B-He-hXi" secondAttribute="trailing" id="xpB-yi-htY"/>
+                <constraint firstItem="66B-He-hXi" firstAttribute="top" secondItem="Z8p-0D-oiL" secondAttribute="top" constant="20" id="zQS-sk-lKE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Z8p-0D-oiL"/>
+            <connections>
+                <outlet property="backToActivityButton" destination="Mpn-8s-QVF" id="7tR-nb-4Uf"/>
+                <outlet property="dividerView" destination="1eR-MJ-SdI" id="bsj-ER-Tnr"/>
+                <outlet property="notesLabel" destination="kwB-gv-qve" id="kJA-lp-nto"/>
+                <outlet property="titleLabel" destination="66B-He-hXi" id="LYc-kw-aXR"/>
+            </connections>
+            <point key="canvasLocation" x="0.0" y="-23.5"/>
+        </view>
+    </objects>
+</document>

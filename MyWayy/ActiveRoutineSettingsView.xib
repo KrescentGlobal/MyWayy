@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFill" id="iN0-l3-epB" customClass="ActiveRoutineSettingsView" customModule="MyWayy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="352"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" translatesAutoresizingMaskIntoConstraints="NO" id="E7f-iZ-ljg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAY SETTINGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRR-3A-Hr4">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="3hk-44-rEc"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="T4o-qT-gGF" userLabel="Alert Switch">
+                    <rect key="frame" x="20" y="46" width="335" height="86"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alert" translatesAutoresizingMaskIntoConstraints="NO" id="Q2M-Gj-M3D">
+                            <rect key="frame" x="0.0" y="31" width="24" height="24"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Alert Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ci-zX-YaB">
+                            <rect key="frame" x="44" y="33" width="222" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWo-md-CbS">
+                            <rect key="frame" x="286" y="27.5" width="51" height="31"/>
+                            <connections>
+                                <action selector="alertSwitchChanged:" destination="iN0-l3-epB" eventType="valueChanged" id="RDM-Kh-CUL"/>
+                            </connections>
+                        </switch>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="aNi-Da-6wz"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="ZM5-As-Sud">
+                    <rect key="frame" x="20" y="132" width="335" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="4v9-x0-FYl"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jq2-p3-Al0" userLabel="Stop and Abandon">
+                    <rect key="frame" x="20" y="133" width="335" height="74"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stop blue" translatesAutoresizingMaskIntoConstraints="NO" id="83E-vx-YTd">
+                            <rect key="frame" x="0.0" y="25" width="24" height="24"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7j-ql-4fb">
+                            <rect key="frame" x="44" y="15" width="291" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="5iK-tl-Wtf"/>
+                            </constraints>
+                            <state key="normal" title="Stop and Abandon Wayy"/>
+                            <connections>
+                                <action selector="stopTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="X0H-JG-g2j"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" id="YHx-3A-Qpr"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="cgz-Jf-R2n">
+                    <rect key="frame" x="20" y="207" width="335" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="eYW-8O-mFX"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ROf-vf-LC1" userLabel="Profile">
+                    <rect key="frame" x="20" y="208" width="335" height="62"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mywayy logo" translatesAutoresizingMaskIntoConstraints="NO" id="UYk-wv-qVI">
+                            <rect key="frame" x="0.0" y="18.5" width="24" height="25"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjM-JN-9xk">
+                            <rect key="frame" x="44" y="9" width="291" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="I5G-xM-PHW"/>
+                            </constraints>
+                            <state key="normal" title="View Wayy Profile"/>
+                            <connections>
+                                <action selector="profileTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="WOE-f9-rcE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="Gbc-gB-f7C"/>
+                    </constraints>
+                </stackView>
+                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fkw-Db-P1v" userLabel="Share">
+                    <rect key="frame" x="20" y="270" width="335" height="0.0"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share small" translatesAutoresizingMaskIntoConstraints="NO" id="gNc-iw-kh4">
+                            <rect key="frame" x="0.0" y="0.0" width="24" height="0.0"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YT-E1-CNZ">
+                            <rect key="frame" x="44" y="0.0" width="291" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="WNi-XS-gX6"/>
+                            </constraints>
+                            <state key="normal" title="Share"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="WNi-XS-gX6"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="shareTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="M6n-73-nV9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" id="oSh-Km-0bU"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pwc-Vc-GOH" userLabel="Cancel">
+                    <rect key="frame" x="20" y="270" width="335" height="62"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear active" translatesAutoresizingMaskIntoConstraints="NO" id="iA0-CR-ghs">
+                            <rect key="frame" x="0.0" y="19" width="24" height="24"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqn-Rg-YyQ">
+                            <rect key="frame" x="44" y="9" width="291" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="rT8-bL-iuM"/>
+                            </constraints>
+                            <state key="normal" title="Close"/>
+                            <connections>
+                                <action selector="closeTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="E6Y-qs-jo8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cgz-Jf-R2n" firstAttribute="bottom" secondItem="ROf-vf-LC1" secondAttribute="top" id="1xA-BU-6ub"/>
+                <constraint firstItem="fkw-Db-P1v" firstAttribute="trailing" secondItem="T4o-qT-gGF" secondAttribute="trailing" id="2na-1G-rF8"/>
+                <constraint firstItem="jq2-p3-Al0" firstAttribute="trailing" secondItem="T4o-qT-gGF" secondAttribute="trailing" id="36k-AK-plR"/>
+                <constraint firstItem="Pwc-Vc-GOH" firstAttribute="leading" secondItem="T4o-qT-gGF" secondAttribute="leading" id="CRp-rh-YDu"/>
+                <constraint firstItem="fkw-Db-P1v" firstAttribute="bottom" secondItem="Pwc-Vc-GOH" secondAttribute="top" id="JRO-rg-WcF"/>
+                <constraint firstItem="fkw-Db-P1v" firstAttribute="height" secondItem="ROf-vf-LC1" secondAttribute="height" id="Km0-2L-wnP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="E7f-iZ-ljg" secondAttribute="trailing" id="Kr7-6e-jfc"/>
+                <constraint firstItem="ROf-vf-LC1" firstAttribute="trailing" secondItem="T4o-qT-gGF" secondAttribute="trailing" id="Lb8-Yj-tyc"/>
+                <constraint firstItem="cgz-Jf-R2n" firstAttribute="trailing" secondItem="T4o-qT-gGF" secondAttribute="trailing" id="NJL-9f-m73"/>
+                <constraint firstItem="E7f-iZ-ljg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="RbU-BI-d42"/>
+                <constraint firstItem="fkw-Db-P1v" firstAttribute="leading" secondItem="T4o-qT-gGF" secondAttribute="leading" id="UPh-gn-nIn"/>
+                <constraint firstItem="Pwc-Vc-GOH" firstAttribute="trailing" secondItem="T4o-qT-gGF" secondAttribute="trailing" id="UTu-Hg-QpX"/>
+                <constraint firstItem="E7f-iZ-ljg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Zqr-ze-zbl"/>
+                <constraint firstItem="T4o-qT-gGF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="bvp-gt-MmJ"/>
+                <constraint firstItem="ZM5-As-Sud" firstAttribute="top" secondItem="T4o-qT-gGF" secondAttribute="bottom" id="e6K-rw-n6o"/>
+                <constraint firstItem="cgz-Jf-R2n" firstAttribute="top" secondItem="jq2-p3-Al0" secondAttribute="bottom" id="gJd-rP-qVG"/>
+                <constraint firstItem="ROf-vf-LC1" firstAttribute="bottom" secondItem="fkw-Db-P1v" secondAttribute="top" id="iIt-if-mrb"/>
+                <constraint firstItem="ZM5-As-Sud" firstAttribute="trailing" secondItem="T4o-qT-gGF" secondAttribute="trailing" id="l85-ch-FZM"/>
+                <constraint firstItem="ZM5-As-Sud" firstAttribute="leading" secondItem="T4o-qT-gGF" secondAttribute="leading" id="lg8-s6-fn9"/>
+                <constraint firstItem="T4o-qT-gGF" firstAttribute="top" secondItem="E7f-iZ-ljg" secondAttribute="bottom" id="nhR-Zs-gGi"/>
+                <constraint firstItem="jq2-p3-Al0" firstAttribute="leading" secondItem="T4o-qT-gGF" secondAttribute="leading" id="pje-zc-Rb0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="T4o-qT-gGF" secondAttribute="trailing" constant="20" id="rC4-bc-gHv"/>
+                <constraint firstItem="Pwc-Vc-GOH" firstAttribute="height" secondItem="ROf-vf-LC1" secondAttribute="height" id="s6M-YI-gBr"/>
+                <constraint firstItem="jq2-p3-Al0" firstAttribute="top" secondItem="ZM5-As-Sud" secondAttribute="bottom" id="uqP-At-RNd"/>
+                <constraint firstItem="ROf-vf-LC1" firstAttribute="leading" secondItem="T4o-qT-gGF" secondAttribute="leading" id="wMi-m1-Zsq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Pwc-Vc-GOH" secondAttribute="bottom" constant="20" id="x41-3F-HsN"/>
+                <constraint firstItem="cgz-Jf-R2n" firstAttribute="leading" secondItem="T4o-qT-gGF" secondAttribute="leading" id="xr9-Mc-UOL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Km0-2L-wnP"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="alertLabel" destination="1ci-zX-YaB" id="H3g-Js-8Y0"/>
+                <outlet property="alertSwitch" destination="eWo-md-CbS" id="usg-Mu-vxX"/>
+                <outlet property="cancelButton" destination="fqn-Rg-YyQ" id="mSh-GO-u6u"/>
+                <outlet property="profileButton" destination="bjM-JN-9xk" id="Vvl-PV-Od1"/>
+                <outlet property="shareButton" destination="1YT-E1-CNZ" id="LUa-t3-N5N"/>
+                <outlet property="stopButton" destination="X7j-ql-4fb" id="Uic-A1-6Ni"/>
+                <outlet property="titleLabel" destination="qRR-3A-Hr4" id="vat-Cf-MX1"/>
+                <outletCollection property="dividerViews" destination="ZM5-As-Sud" collectionClass="NSMutableArray" id="GPH-PO-CVY"/>
+                <outletCollection property="dividerViews" destination="cgz-Jf-R2n" collectionClass="NSMutableArray" id="QRB-td-wdj"/>
+            </connections>
+            <point key="canvasLocation" x="-189" y="-212"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alert" width="24" height="24"/>
+        <image name="clear active" width="24" height="24"/>
+        <image name="mywayy logo" width="24" height="25"/>
+        <image name="share small" width="24" height="24"/>
+        <image name="stop blue" width="24" height="24"/>
+    </resources>
+</document>

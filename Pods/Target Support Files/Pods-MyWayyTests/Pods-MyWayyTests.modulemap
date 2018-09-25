@@ -1,0 +1,6 @@
+framework module Pods_MyWayyTests {
+  umbrella header "Pods-MyWayyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

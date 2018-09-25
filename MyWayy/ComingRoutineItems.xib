@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="ComingRoutineItems" customModule="MyWayy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="315"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CYX-wd-juF">
+                    <rect key="frame" x="0.0" y="37" width="325" height="245"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="t4p-dD-iof">
+                        <size key="itemSize" width="245" height="260"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUGGESTED WAYYS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekK-VB-ypQ">
+                    <rect key="frame" x="30" y="12" width="123.5" height="15"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                    <color key="textColor" red="0.4479261040687561" green="0.49153023958206177" blue="0.5340997576713562" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbM-H7-aYx">
+                    <rect key="frame" x="271" y="9" width="38" height="21"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.9882352941176471" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="voD-Hz-sgY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.41430747509999999" green="0.88206678630000002" blue="0.76811224219999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.41430747509999999" green="0.88206678630000002" blue="0.76811224219999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Xb-ta-grW">
+                    <rect key="frame" x="8" y="12.5" width="14" height="14"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="14" id="4Ob-cm-hX9"/>
+                        <constraint firstAttribute="height" constant="14" id="chj-xG-AOo"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.41430747509002686" green="0.88206678628921509" blue="0.76811224222183228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@ElonMusk" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2A-Re-geZ" userLabel="Tags">
+                    <rect key="frame" x="20" y="290" width="73" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="kSI-uQ-0mc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                    <color key="textColor" name="lightishBlue"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="kSI-uQ-0mc"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ekK-VB-ypQ" firstAttribute="leading" secondItem="4Xb-ta-grW" secondAttribute="trailing" constant="8" id="48I-ZK-8pv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GbM-H7-aYx" secondAttribute="trailing" constant="16" id="4Be-RV-9aU"/>
+                <constraint firstItem="CYX-wd-juF" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="AOF-V9-lYQ"/>
+                <constraint firstItem="GbM-H7-aYx" firstAttribute="centerY" secondItem="ekK-VB-ypQ" secondAttribute="centerY" id="ASx-Wn-2am"/>
+                <constraint firstItem="CYX-wd-juF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GrT-NU-VhC"/>
+                <constraint firstItem="E2A-Re-geZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="LX5-pL-Uew"/>
+                <constraint firstItem="ekK-VB-ypQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="12" id="Pdf-cd-g1Z"/>
+                <constraint firstItem="4Xb-ta-grW" firstAttribute="centerY" secondItem="ekK-VB-ypQ" secondAttribute="centerY" id="RjD-JG-ALL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="CYX-wd-juF" secondAttribute="bottom" constant="33" id="isD-hP-2wa"/>
+                <constraint firstItem="ekK-VB-ypQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="j3e-3M-ktK"/>
+                <constraint firstItem="CYX-wd-juF" firstAttribute="top" secondItem="ekK-VB-ypQ" secondAttribute="bottom" constant="10" id="kJS-6T-f3d"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="E2A-Re-geZ" secondAttribute="bottom" constant="10" id="ykY-r4-Yj8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="collectionView" destination="CYX-wd-juF" id="mmE-Ah-Xuu"/>
+            </connections>
+            <point key="canvasLocation" x="55.5" y="-121.5"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="lightishBlue">
+            <color red="0.29399999980000002" green="0.45500001309999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

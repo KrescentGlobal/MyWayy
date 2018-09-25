@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Edit Activity View Controller-->
+        <scene sceneID="XmO-h5-4va">
+            <objects>
+                <viewController storyboardIdentifier="EditActivityViewController" id="ljM-Yi-c8J" customClass="EditActivityViewController" customModule="MyWayy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pQI-pn-Cvw"/>
+                        <viewControllerLayoutGuide type="bottom" id="cp3-ZT-OnE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XtR-9r-esh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udb-Ln-ZFb">
+                                <rect key="frame" x="24" y="31" width="16" height="22"/>
+                                <state key="normal" image="white x">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="ljM-Yi-c8J" eventType="touchUpInside" id="PGk-iB-K2r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kl6-YC-GPr">
+                                <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="6Xm-2t-58U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="set time">
+                                    <color key="titleColor" name="lightishBlue"/>
+                                </state>
+                                <connections>
+                                    <action selector="setActivityDurationTime:" destination="ljM-Yi-c8J" eventType="touchUpInside" id="fxs-W8-VLx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity Name" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yv0-xW-45u">
+                                <rect key="frame" x="24" y="104" width="327" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="duration of activity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJP-0i-khg">
+                                <rect key="frame" x="24" y="244" width="251" height="14"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXP-M8-9Qh">
+                                <rect key="frame" x="0.0" y="280" width="375" height="174.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <date key="date" timeIntervalSinceReferenceDate="531057600.11228698">
+                                    <!--2017-10-30 12:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2303236723" green="0.3467013538" blue="1" alpha="0.75" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SZn-UL-XUP" firstAttribute="trailing" secondItem="Yv0-xW-45u" secondAttribute="trailing" constant="24" id="3mM-fS-17D"/>
+                            <constraint firstItem="kl6-YC-GPr" firstAttribute="centerX" secondItem="XtR-9r-esh" secondAttribute="centerX" id="LVj-fa-RlM"/>
+                            <constraint firstItem="kl6-YC-GPr" firstAttribute="bottom" secondItem="SZn-UL-XUP" secondAttribute="bottom" id="Ngc-Xh-Eo6"/>
+                            <constraint firstItem="kl6-YC-GPr" firstAttribute="leading" secondItem="XtR-9r-esh" secondAttribute="leading" id="RRQ-dg-kfP"/>
+                            <constraint firstItem="Yv0-xW-45u" firstAttribute="leading" secondItem="SZn-UL-XUP" secondAttribute="leading" constant="24" id="UzH-qU-Tsw"/>
+                            <constraint firstItem="Udb-Ln-ZFb" firstAttribute="leading" secondItem="XtR-9r-esh" secondAttribute="leading" constant="24" id="bPR-2I-Nzg"/>
+                            <constraint firstItem="VJP-0i-khg" firstAttribute="leading" secondItem="SZn-UL-XUP" secondAttribute="leading" constant="24" id="blY-u3-0AR"/>
+                            <constraint firstItem="VJP-0i-khg" firstAttribute="top" secondItem="Yv0-xW-45u" secondAttribute="bottom" constant="99" id="gGx-ku-bmc"/>
+                            <constraint firstItem="Udb-Ln-ZFb" firstAttribute="top" secondItem="SZn-UL-XUP" secondAttribute="top" constant="11" id="lwh-Jc-sdq"/>
+                            <constraint firstItem="Yv0-xW-45u" firstAttribute="top" secondItem="SZn-UL-XUP" secondAttribute="top" constant="84" id="mq7-gD-hqC"/>
+                            <constraint firstItem="SZn-UL-XUP" firstAttribute="trailing" secondItem="VJP-0i-khg" secondAttribute="trailing" constant="100" id="qK7-iC-IYx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SZn-UL-XUP"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityNameLabel" destination="Yv0-xW-45u" id="WQt-st-8Ek"/>
+                        <outlet property="durationOfActivityLabel" destination="VJP-0i-khg" id="uic-eR-3vm"/>
+                        <outlet property="durationTimePicker" destination="UXP-M8-9Qh" id="6Dk-XN-ULg"/>
+                        <outlet property="setTimeButton" destination="kl6-YC-GPr" id="vdL-ir-16H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ycp-dF-ubQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469.60000000000002" y="3367.4662668665669"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="white x" width="16" height="16"/>
+        <namedColor name="lightishBlue">
+            <color red="0.29399999980000002" green="0.45500001309999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

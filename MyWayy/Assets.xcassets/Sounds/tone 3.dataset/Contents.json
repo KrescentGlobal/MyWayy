@@ -1,0 +1,13 @@
+{
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "data" : [
+    {
+      "idiom" : "universal",
+      "filename" : "SoftBell_Notification4b.wav",
+      "universal-type-identifier" : "com.microsoft.waveform-audio"
+    }
+  ]
+}

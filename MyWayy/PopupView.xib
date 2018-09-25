@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupView" customModule="MyWayy" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="xxT-8X-gqR" id="lqO-8q-JxH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view multipleTouchEnabled="YES" contentMode="scaleToFill" id="CmP-wH-mSH">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPC-Au-deD">
+                    <rect key="frame" x="0.0" y="50" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7I-cP-ext">
+                            <rect key="frame" x="0.0" y="0.0" width="186.5" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="b0H-Wp-ASU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" name="lightishBlue"/>
+                            </state>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Reg-tp-7fk">
+                            <rect key="frame" x="186.5" y="10" width="1" height="30"/>
+                            <color key="backgroundColor" red="0.81711298227310181" green="0.85568863153457642" blue="0.99648338556289673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="3YH-md-CJy"/>
+                                <constraint firstAttribute="height" constant="30" id="RCa-Sg-aae"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCl-kf-XYv">
+                            <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Pqc-q6-BTy"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="sJH-I4-L3D"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                            <state key="normal" title="Delete">
+                                <color key="titleColor" name="lightishBlue"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="mCl-kf-XYv" secondAttribute="trailing" id="7NE-ov-fAe"/>
+                        <constraint firstItem="mCl-kf-XYv" firstAttribute="leading" secondItem="Reg-tp-7fk" secondAttribute="trailing" id="Iup-2a-PFh"/>
+                        <constraint firstItem="Reg-tp-7fk" firstAttribute="centerX" secondItem="RPC-Au-deD" secondAttribute="centerX" id="KQf-OI-vpl"/>
+                        <constraint firstItem="A7I-cP-ext" firstAttribute="leading" secondItem="RPC-Au-deD" secondAttribute="leading" id="McA-0y-fmU"/>
+                        <constraint firstItem="Reg-tp-7fk" firstAttribute="leading" secondItem="A7I-cP-ext" secondAttribute="trailing" id="Qvv-LO-V5H"/>
+                        <constraint firstAttribute="bottom" secondItem="mCl-kf-XYv" secondAttribute="bottom" id="Y3d-Bx-x4F"/>
+                        <constraint firstAttribute="height" constant="50" id="eyU-f0-zSM"/>
+                        <constraint firstAttribute="bottom" secondItem="A7I-cP-ext" secondAttribute="bottom" id="f9I-iJ-2PB"/>
+                        <constraint firstAttribute="bottom" secondItem="Reg-tp-7fk" secondAttribute="bottom" constant="10" id="qfk-tL-Hya"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete the 4 selected activities?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxT-8X-gqR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.29399999980000002" green="0.45500001309999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RPC-Au-deD" firstAttribute="top" secondItem="xxT-8X-gqR" secondAttribute="bottom" id="1Eg-ej-0uo"/>
+                <constraint firstItem="xxT-8X-gqR" firstAttribute="leading" secondItem="CmP-wH-mSH" secondAttribute="leading" id="3eV-GP-FKM"/>
+                <constraint firstAttribute="trailing" secondItem="RPC-Au-deD" secondAttribute="trailing" id="3ii-Yi-F5H"/>
+                <constraint firstItem="xxT-8X-gqR" firstAttribute="top" secondItem="CmP-wH-mSH" secondAttribute="top" id="9vD-Pc-tfT"/>
+                <constraint firstAttribute="trailing" secondItem="xxT-8X-gqR" secondAttribute="trailing" id="AWZ-JU-JMo"/>
+                <constraint firstItem="RPC-Au-deD" firstAttribute="leading" secondItem="CmP-wH-mSH" secondAttribute="leading" id="aBh-xO-7JR"/>
+                <constraint firstAttribute="bottom" secondItem="RPC-Au-deD" secondAttribute="bottom" id="pMq-7v-85e"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-245.5" y="-480"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="lightishBlue">
+            <color red="0.29399999976158142" green="0.45500001311302185" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
